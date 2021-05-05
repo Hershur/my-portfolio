@@ -1,0 +1,130 @@
+:root {
+  --purple: #4b21ff;
+  --white: #f1f1f1;
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Dosis', sans-serif;
+}
+.page {
+  display: grid;
+  grid-template-columns: 1.6fr 1.2fr 1.9fr;
+}
+
+.left-side {
+  background-color: var(--purple);
+  height: 100vh;
+}
+
+.right-side {
+  background-color: var(--white);
+  min-height: 100vh;
+  grid-column: 2/4;
+}
+
+.image {
+  background-image: url('https://i.postimg.cc/25TYbvZD/image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: aqua;
+  min-width: 400px;
+  height: 90vh;
+  margin-top: 35px;
+  grid-column: 2/3;
+  position: absolute;
+  left: 300px;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.19), 0 16px 16px rgba(0, 0, 0, 0.23);
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.contact {
+  font-size: 1em;
+  color: var(--white);
+  position: absolute;
+  bottom: 10px;
+  margin: 30px;
+}
+
+.span {
+  width: 100px;
+  height: 7px;
+  background-color: var(--purple);
+  position: relative;
+  top: 37%;
+  left: 180px;
+  margin: auto;
+}
+
+div.details {
+  width: 500px;
+  font-family: 'Arvo', serif;
+  position: absolute;
+  height: 400px;
+  right: 6%;
+  top: 20%;
+  line-height: 1.4;
+}
+
+.social-media span {
+  padding-right: 15px;
+  padding-top: 5px;
+}
+
+.portfolio button {
+  font-weight: 700;
+  padding: 20px;
+  margin-right: 20px;
+  border: solid 2px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+button:nth-of-type(1) {
+  color: white;
+  background-color: var(--purple);
+  border: none;
+}
+
+.fname,
+.surname {
+  font-size: 2em;
+}
+
+.details span:nth-of-type(2) {
+  color: var(--purple);
+}
+
+.details span:nth-of-type(3) {
+  font-weight: 600;
+  font-family: 'Dosis', sans-serif;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1024px) {
+  div.details {
+    position: absolute;
+    right: 2%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  div.details {
+    position: absolute;
+    right: 15%;
+  }
+
+  .image {
+    background-image: url('');
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .page {
+    display: flex;
+  }
+}

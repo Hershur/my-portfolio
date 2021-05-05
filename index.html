@@ -63,21 +63,34 @@
           <span class="surname"><b>ASSURANCE</b> </span><br />
           <span class="fname"><b>FEMI</b> </span><br />
           <span>Software Engineer</span>
-          <p>
-            I'm Assurance Femi Fagbolagun, Software and Data Engineer. 
-            Proven experience of developing software solutions for financial institutions.<br/> 
-            Stack: Javascript, React, React Native, Nodejs, ASP.NET Core and ColdFusion. SQL Server, Mongodb
-            and PostgreSQL at the Back-end. 
-            <br/> Python for Data science and Scientific computing, AI Enthusiast.<br/>
-            Proudly Nigerian.
+          <p style="text-align: justify; line-height: 1.5em;">
+            I develop web and mobile software solutions with Javascript/TypeScript, SCSS, React, React Native, Nodejs and
+            ASP.NET Core (C#). Other technologies like  PWAs,  Web Sockets,  Web RTC,  Machine Learning.
+            <br/> <br/>
+            Check out my portfolio to see some of my works.
           </p>
           <div class="portfolio">
-            <button onclick="window.open('https://hershur.github.io/Maintenance-Tracker-App/','_blank')">PORTFOLIO</button>
-            <button onclick="window.open('https://drive.google.com/file/d/10tbZ5d00ZKSI_2zj4DiTRCpttf9BTQlK/view?usp=sharing','_blank')">RESUME</button>
+            <button id="portfolio" class="button" onclick="">PORTFOLIO</button>
+            <button class="button" onclick="window.open('https://drive.google.com/file/d/10tbZ5d00ZKSI_2zj4DiTRCpttf9BTQlK/view?usp=sharing','_blank')">RESUME</button>
           </div>
         </div>
       </div>
+
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>Projects</h1>
+          <div id="projects">
+            
+          </div>
+        </div>
+      
+      </div>
+
     </div>
+    <script src="./index.js"></script>
     <script src="./removeBanner.js"></script>
   </body>
 </html>

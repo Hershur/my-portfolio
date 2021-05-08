@@ -24,10 +24,10 @@ body {
 }
 
 .image {
-  background-image: url('https://i.postimg.cc/25TYbvZD/image.jpg');
+  background-image: url('https://i.postimg.cc/7LPcKQFw/37547730-remo.png');
   background-size: cover;
   background-position: center;
-  background-color: aqua;
+  background-color: #f1f1f1;
   min-width: 400px;
   height: 90vh;
   margin-top: 35px;
@@ -65,7 +65,7 @@ div.details {
   font-family: 'Arvo', serif;
   position: absolute;
   height: 400px;
-  right: 6%;
+  right: 3%;
   top: 20%;
   line-height: 1.4;
 }
@@ -162,7 +162,7 @@ button:nth-of-type(1):hover {
 
 /* The Modal (background) */
 .modal {
-  display: block; /* Hidden by default */
+  display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 10; /* Sit on top */
   padding-top: 50px; /* Location of the box */
@@ -211,33 +211,101 @@ button:nth-of-type(1):hover {
   font-size: 20px;
   background: #4b21ff;
   padding: 5px;
+  border-radius: 5px;
 }
+
+.project-tools {
+  margin: 5px;
+  text-align: center;
+}
+
+.project-tools div > span {
+  color: white;
+  padding: 2px;
+  background: #4b21ff;
+  border-radius: 8px;
+}
+
+
 
 .modal-content h1 {
   text-align: center;
 }
 
-
-@media screen and (max-width: 1300px) and (min-width: 1024px) {
-  div.details {
-    position: absolute;
-    right: 2%;
-  }
+.hideModal {
+  opacity: 0;
+  transform: rotate(0) scale(0);
 }
 
-@media screen and (max-width: 1024px) {
-  div.details {
-    position: absolute;
-    right: 15%;
-  }
-
-  .image {
-    background-image: url('');
-  }
+.swirl-in-fwd {
+  -webkit-animation: swirl-in-fwd 0.6s ease-out both;
+  animation: swirl-in-fwd 0.6s ease-out both;
 }
 
-@media screen and (max-width: 400px) {
-  .page {
-    display: flex;
-  }
+/**
+* ----------------------------------------
+* animation swirl-in-fwd
+* ----------------------------------------
+*/
+@-webkit-keyframes swirl-in-fwd {
+0% {
+    -webkit-transform: rotate(-540deg) scale(0);
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
 }
+100% {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    opacity: 1;
+}
+}
+@keyframes swirl-in-fwd {
+0% {
+    -webkit-transform: rotate(-540deg) scale(0);
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+}
+100% {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    opacity: 1;
+}
+}
+
+.swirl-out-bck {
+  -webkit-animation: swirl-out-bck 0.6s ease-in both;
+  animation: swirl-out-bck 0.6s ease-in both;
+}
+
+/**
+* ----------------------------------------
+* animation swirl-out-bck
+* ----------------------------------------
+*/
+@-webkit-keyframes swirl-out-bck {
+0% {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    opacity: 1;
+}
+100% {
+    -webkit-transform: rotate(-540deg) scale(0);
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+}
+}
+@keyframes swirl-out-bck {
+0% {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    opacity: 1;
+}
+100% {
+    -webkit-transform: rotate(-540deg) scale(0);
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+}
+}
+
+
+

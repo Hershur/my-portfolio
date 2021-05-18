@@ -33,7 +33,7 @@ body {
   margin-top: 35px;
   grid-column: 2/3;
   position: absolute;
-  left: 300px;
+  left: 265px;
   box-shadow: 0 10px 5px rgba(0, 0, 0, 0.19), 0 16px 16px rgba(0, 0, 0, 0.23);
 }
 
@@ -331,7 +331,7 @@ button:nth-of-type(1):hover {
 
   .right-side {
     background-color: var(--white);
-    min-height: auto;
+    min-height: 100vh;
     display: flex;
     bottom: 0px;
     position: relative;
@@ -355,6 +355,15 @@ button:nth-of-type(1):hover {
 
   img {
     width: 100% !important;
+  }
+
+  button:nth-of-type(2) {
+    border-radius: 15px;
+    border: 2px solid #000000;
+  }
+
+  .modal {
+    height: 90%;
   }
 
 }

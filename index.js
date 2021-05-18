@@ -1,3 +1,4 @@
+
 let modal = document.getElementById("myModal");
 let btn = document.getElementById("portfolio");
 let span = document.getElementsByClassName("close")[0];
@@ -12,7 +13,7 @@ let projectObjects = [
     {
         name: "Greedy Hunter Game",
         projectURL: "https://hershur.github.io/greedy-hunter/",
-        backgroundImageURL: "https://i.postimg.cc/sDZwDJJs/Capture.png",
+        backgroundImageURL: "https://i.postimg.cc/ZncmbnmR/Capture.png",
         tools: ["React","TypeScript","Redux"]
 
     },

@@ -332,7 +332,7 @@ button:nth-of-type(1):hover {
 
   .right-side {
     background-color: var(--white);
-    min-height: 100vh;
+    max-height: 100vh;
     display: flex;
     bottom: 0px;
     position: relative;

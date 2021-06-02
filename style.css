@@ -4,7 +4,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow: auto;
   font-family: 'Dosis', sans-serif;
 }
 .page {
@@ -19,12 +19,11 @@ body {
 
 .right-side {
   background-color: var(--white);
-  min-height: 100vh;
   grid-column: 2/4;
 }
 
 .image {
-  background-image: url('https://i.postimg.cc/7LPcKQFw/37547730-remo.png');
+  background-image: url('https://i.postimg.cc/zGTW3ZF5/IMG-5566-removebg-preview.png');
   background-size: cover;
   background-position: center;
   background-color: #f1f1f1;
@@ -220,7 +219,7 @@ button:nth-of-type(1):hover {
   text-align: center;
 }
 
-.project-tools div > span {
+.project-tools div span {
   color: white;
   padding: 2px;
   background: #4b21ff;
@@ -311,6 +310,7 @@ button:nth-of-type(1):hover {
 
 
 @media only screen and (max-width: 1024px) {
+  
   .page {
     display: block;
   }
@@ -328,17 +328,23 @@ button:nth-of-type(1):hover {
     display: flex;
     justify-content: space-evenly;
     line-height: 1.5;
+    box-shadow: 0 10px 5px rgb(0 0 0 / 19%), 0 16px 16px rgb(0 0 0 / 23%);
   }
 
   .right-side {
     background-color: var(--white);
-    max-height: 100vh;
     display: flex;
-    bottom: 0px;
-    position: relative;
   }
 
   .image {
+    position: static;
+    height: 400px;
+    min-width: 0px;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  .span {
     display: none;
   }
 
@@ -348,6 +354,7 @@ button:nth-of-type(1):hover {
     position: relative;
     right: auto;
     line-height: 1.5;
+    box-shadow: 0 10px 5px rgb(0 0 0 / 19%), 0 16px 16px rgb(0 0 0 / 23%);
   }
 
   #projects {
@@ -365,6 +372,15 @@ button:nth-of-type(1):hover {
 
   .modal {
     height: 90%;
+  }
+
+  .button {
+    margin: 5px;
+    padding: 10px;
+  }
+
+  p {
+    font-size: 14px;
   }
 
 }
